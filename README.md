@@ -152,7 +152,7 @@ Meskipun paper propose 2ST-UDA sebagai improvement dari WS-UDA, hasil kami menun
 ### Key Takeaways
 
  **Replikasi berhasil** - Implementasi algorithm sesuai paper  
- **WS-UDA ** - Match supervised baseline (95.35%)  
+ **WS-UDA** - Match supervised baseline (95.35%)  
  **Domain weighting works** - Balanced contribution dari ketiga source domains  
  **Pseudo-labeling berfungsi** - 97.4% samples ter-label dengan confidence >0.52  
  **Stage 2 tidak memberikan improvement** -   
