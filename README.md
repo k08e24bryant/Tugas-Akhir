@@ -1,7 +1,7 @@
 #  Paper: Multi-Source Domain Adaptation untuk Sentiment Analysis
 
 
-## 📊 Dataset
+## Dataset
 
 Menggunakan **Amazon Reviews** dari 4 kategori produk:
 - **Books** - 1000 pos, 1000 neg
@@ -12,7 +12,7 @@ Menggunakan **Amazon Reviews** dari 4 kategori produk:
 Total: 6000 source samples, 5945 target unlabeled, 2000 target test
 
 
-## 📈 Hasil Eksperimen
+## Hasil Eksperimen
 
 ### Performance Comparison
 
@@ -78,26 +78,6 @@ Distribusi cukup balanced, menunjukkan ketiga domain relevan untuk Kitchen.
 - Sublinear term frequency
 - L2 normalization
 
-## Struktur Project
-
-```
-.
-├── src/
-│   ├── models.py                    # Neural network architectures
-│   ├── data_loader_acl_tfidf.py     # Data loading & TF-IDF
-│   ├── train_supervised_tfidf.py    # Baseline supervised
-│   ├── train_ws_uda_tfidf.py        # Algorithm 1 (WS-UDA)
-│   ├── train_2st_uda_tfidf.py       # Algorithm 2 (2ST-UDA)
-│   ├── visualize_results.py         # Generate plots
-│   └── evaluate_pseudo_labels.py    # Pseudo-label quality analysis
-├── processed_acl/                   # Amazon reviews dataset
-├── visualizations/                  # Output plots & reports
-├── metrics_*.json                   # Training results
-├── confusion_matrix_*.csv           # Confusion matrices
-├── requirements.txt                 # Dependencies
-└── README.md                        # This file
-```
-
 ## 🔬 Algoritma
 
 ### WS-UDA (Algorithm 1)
@@ -134,7 +114,7 @@ w_k = softmax(D(E_s(x_target)))_k
 
 **Result:** 5792 pseudo-labels generated (97.4% dari 5945 unlabeled samples)
 
-## 📊 Analisis Hasil
+## Analisis Hasil
 
 ### Kenapa 2ST-UDA Tidak Outperform?
 
@@ -155,4 +135,4 @@ Meskipun paper propose 2ST-UDA sebagai improvement dari WS-UDA, hasil kami menun
  **WS-UDA** - Match supervised baseline (95.35%)  
  **Domain weighting works** - Balanced contribution dari ketiga source domains  
  **Pseudo-labeling berfungsi** - 97.4% samples ter-label dengan confidence >0.52  
- **Stage 2 tidak memberikan improvement** -   
+ **Stage 2 tidak memberikan improvement** -  Tidak memberikan improvement yang signifikan
