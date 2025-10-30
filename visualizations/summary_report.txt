@@ -1,0 +1,46 @@
+
+================================================================================
+MULTI-SOURCE DOMAIN ADAPTATION - RESULTS SUMMARY
+Target Domain: Kitchen Reviews
+================================================================================
+
+1. SUPERVISED BASELINE
+   - Best Accuracy: 95.35%
+   - Training Strategy: Source domains only (Books, DVD, Electronics)
+   - Total Epochs: 10
+
+2. WS-UDA (Weighting Scheme based UDA)
+   - Best Accuracy: 95.35%
+   - Training Strategy: Adversarial training with domain weighting
+   - Total Epochs: 10
+   - Domain Weights:
+     * Books: 35.0%
+     * DVD: 34.0%
+     * Electronics: 31.0%
+
+3. 2ST-UDA (Two-Stage Training based UDA)
+   - Best Accuracy: 94.25%
+   - Training Strategy: Pre-train WS-UDA + Self-training with pseudo-labels
+   - Stage 1 (WS-UDA): 10 epochs
+   - Stage 2 (Self-training): Confidence-based pseudo-labeling + Fine-tuning
+
+================================================================================
+PERFORMANCE RANKING:
+1. Supervised Baseline: 95.35%
+2. WS-UDA: 95.35%
+3. 2ST-UDA: 94.25%
+
+OBSERVATIONS:
+- All methods achieved >94% accuracy on target domain
+- WS-UDA matched supervised performance (95.35% vs 95.35%)
+- 2ST-UDA: 94.25% (slightly lower, possibly due to pseudo-label noise)
+- Domain weighting shows balanced contribution from all source domains
+
+================================================================================
+VISUALIZATIONS GENERATED:
+✓ Training curves: visualizations/training_curves.png
+✓ Confusion matrices: visualizations/confusion_matrices.png
+✓ Domain weights: visualizations/domain_weights.png
+✓ Comparison chart: visualizations/comparison_barchart.png
+✓ Metrics table: visualizations/metrics_table.png
+================================================================================

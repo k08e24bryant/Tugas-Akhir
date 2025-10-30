@@ -1,0 +1,78 @@
+{
+  "best_accuracy": 95.35,
+  "confusion_matrix_path": "confusion_matrix_supervised.csv",
+  "classification_report": {
+    "0": {
+      "precision": 0.9503475670307845,
+      "recall": 0.957,
+      "f1-score": 0.953662182361734,
+      "support": 1000.0
+    },
+    "1": {
+      "precision": 0.9566968781470292,
+      "recall": 0.95,
+      "f1-score": 0.9533366783743101,
+      "support": 1000.0
+    },
+    "accuracy": 0.9535,
+    "macro avg": {
+      "precision": 0.9535222225889068,
+      "recall": 0.9535,
+      "f1-score": 0.953499430368022,
+      "support": 2000.0
+    },
+    "weighted avg": {
+      "precision": 0.9535222225889068,
+      "recall": 0.9535,
+      "f1-score": 0.9534994303680221,
+      "support": 2000.0
+    }
+  },
+  "training_history": {
+    "epoch": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "train_loss": [
+      0.6811373797967473,
+      0.3408933896671004,
+      0.05955161753902461,
+      0.015115439533231093,
+      0.005263012990151298,
+      0.0025228474555004207,
+      0.001495079765218325,
+      0.0009833473351442898,
+      0.000755282557575047,
+      0.0004862464469002141
+    ],
+    "test_accuracy": [
+      89.60000000000001,
+      93.75,
+      94.1,
+      94.85,
+      95.25,
+      95.05,
+      95.35,
+      95.3,
+      95.3,
+      95.35
+    ]
+  },
+  "vectorizer_path": "tfidf_vectorizer_baseline.pkl",
+  "model_path": "supervised_tfidf_best.pt",
+  "hyperparameters": {
+    "learning_rate": 0.0001,
+    "batch_size": 32,
+    "num_epochs": 10,
+    "hidden_dim": 100,
+    "dropout": 0.3
+  }
+}

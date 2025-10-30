@@ -1,0 +1,6 @@
+{
+  "mode": "baseline",
+  "vocab_size": 10000,
+  "max_features": 10000,
+  "train_corpus_size": 6000
+}

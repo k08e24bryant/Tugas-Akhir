@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+TA/
+venv/
+env/
+ENV/
+
+# Model checkpoints (too large for GitHub)
+*.pt
+*.pth
+*.ckpt
+
+# Vectorizers and pickled files
+*.pkl
+*.joblib
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large data files (optional - keep if you want to share dataset)
+# mtl-dataset/
+# processed_acl/
