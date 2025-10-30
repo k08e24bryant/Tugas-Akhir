@@ -11,7 +11,7 @@ venv/
 env/
 ENV/
 
-# Model checkpoints (too large for GitHub)
+# Model checkpoints 
 *.pt
 *.pth
 *.ckpt
@@ -33,6 +33,5 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Large data files (optional - keep if you want to share dataset)
-# mtl-dataset/
-# processed_acl/
+# Context files
+src/context.md
