@@ -78,7 +78,7 @@ Distribusi cukup balanced, menunjukkan ketiga domain relevan untuk Kitchen.
 - Sublinear term frequency
 - L2 normalization
 
-## 🔬 Algoritma
+## Algoritma
 
 ### WS-UDA (Algorithm 1)
 
